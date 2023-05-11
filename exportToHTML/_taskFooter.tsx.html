@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>_taskFooter.tsx</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #e8bf6a;}
+.s4 { color: #bababa;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+_taskFooter.tsx</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">React</span><span class="s0">, </span><span class="s1">{ FC</span><span class="s0">, </span><span class="s1">ReactElement} from </span><span class="s2">&quot;react&quot;</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">{ Box</span><span class="s0">, </span><span class="s1">Button</span><span class="s0">, </span><span class="s1">FormControlLabel</span><span class="s0">, </span><span class="s1">Switch } from </span><span class="s2">&quot;@mui/material&quot;</span><span class="s0">;</span>
+
+
+<span class="s0">export const </span><span class="s1">TaskFooter:FC = ():ReactElement =&gt; {</span>
+    <span class="s0">return </span><span class="s1">(</span>
+        <span class="s3">&lt;Box</span>
+        <span class="s4">display</span><span class="s2">=&quot;flex&quot;</span>
+        <span class="s4">justifyContent</span><span class="s2">=&quot;space-between&quot;</span>
+        <span class="s4">alignItems</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s4">mt</span><span class="s2">=</span><span class="s3">{</span><span class="s5">4</span><span class="s3">}</span>
+        <span class="s3">&gt;</span>
+            <span class="s3">&lt;FormControlLabel </span><span class="s4">control</span><span class="s2">=</span><span class="s3">{&lt;Switch </span><span class="s4">color</span><span class="s2">=&quot;warning&quot; </span><span class="s3">/&gt;} </span><span class="s4">label</span><span class="s2">=&quot;In Progress&quot; </span><span class="s3">/&gt;</span>
+            <span class="s3">&lt;Button</span>
+            <span class="s4">variant</span><span class="s2">=&quot;contained&quot;</span>
+            <span class="s4">color</span><span class="s2">=&quot;success&quot;</span>
+            <span class="s4">size</span><span class="s2">=&quot;small&quot;</span>
+            <span class="s4">sx</span><span class="s2">=</span><span class="s3">{</span><span class="s1">{ color: </span><span class="s2">'#ffffff' </span><span class="s1">}</span><span class="s3">}</span>
+            <span class="s3">&gt;</span><span class="s1">Mark Complete</span>
+            <span class="s3">&lt;/Button&gt;</span>
+        <span class="s3">&lt;/Box&gt;</span>
+    <span class="s1">)</span>
+<span class="s1">}</span></pre>
+</body>
+</html>

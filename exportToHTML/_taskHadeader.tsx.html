@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>_taskHadeader.tsx</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #e8bf6a;}
+.s4 { color: #bababa;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+_taskHadeader.tsx</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">React</span><span class="s0">, </span><span class="s1">{ FC</span><span class="s0">, </span><span class="s1">ReactElement } from </span><span class="s2">&quot;react&quot;</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">{ Box</span><span class="s0">, </span><span class="s1">Chip</span><span class="s0">, </span><span class="s1">Typography } from </span><span class="s2">'@mui/material'</span>
+<span class="s0">import </span><span class="s1">{ ITaskheader } from </span><span class="s2">&quot;./interfaces/ITaskheader&quot;</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">{ format } from </span><span class="s2">'date-fns'</span>
+
+
+<span class="s0">export const </span><span class="s1">TaskHeader:FC&lt;ITaskheader&gt; = (props):ReactElement =&gt; {</span>
+
+    <span class="s0">const </span><span class="s1">{title = </span><span class="s2">'Default Title'</span><span class="s0">, </span><span class="s1">date = </span><span class="s0">new </span><span class="s1">Date() } = props</span>
+
+    <span class="s0">return </span><span class="s1">(</span>
+        <span class="s3">&lt;Box</span>
+        <span class="s4">display</span><span class="s2">=&quot;flex&quot;</span>
+        <span class="s4">width</span><span class="s2">=&quot;100%&quot;</span>
+        <span class="s4">justifyContent</span><span class="s2">=&quot;space-between&quot;</span>
+        <span class="s4">mb</span><span class="s2">=</span><span class="s3">{</span><span class="s5">3</span><span class="s3">}</span>
+        <span class="s3">&gt;</span>
+            <span class="s3">&lt;Box&gt;</span>
+                <span class="s3">&lt;Typography </span><span class="s4">variant</span><span class="s2">=&quot;h6&quot;</span><span class="s3">&gt;{</span><span class="s1">title</span><span class="s3">}&lt;/Typography&gt;</span>
+            <span class="s3">&lt;/Box&gt;</span>
+            <span class="s3">&lt;Box&gt;</span>
+                <span class="s3">&lt;Chip</span>
+                    <span class="s4">variant</span><span class="s2">=&quot;outlined&quot;</span>
+                    <span class="s4">label</span><span class="s2">=</span><span class="s3">{</span><span class="s1">format(date</span><span class="s0">, </span><span class="s2">'PPP'</span><span class="s1">)</span><span class="s3">}</span>
+            <span class="s3">/&gt;</span>
+            <span class="s3">&lt;/Box&gt;</span>
+        <span class="s3">&lt;/Box&gt;</span>
+    <span class="s1">)</span>
+<span class="s1">}</span></pre>
+</body>
+</html>

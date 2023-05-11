@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>task.tsx</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #e8bf6a;}
+.s4 { color: #bababa;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+task.tsx</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">React</span><span class="s0">, </span><span class="s1">{ FC</span><span class="s0">, </span><span class="s1">ReactElement } from </span><span class="s2">&quot;react&quot;</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">{ Box } from </span><span class="s2">&quot;@mui/material&quot;</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">{ TaskHeader } from </span><span class="s2">&quot;./_taskHadeader&quot;</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">{ TaskDiscretion } from </span><span class="s2">&quot;./_taskDiscretion&quot;</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">{ TaskFooter } from </span><span class="s2">&quot;./_taskFooter&quot;</span><span class="s0">;</span>
+
+
+<span class="s0">export const </span><span class="s1">Task:FC = (props):ReactElement =&gt; {</span>
+
+
+
+    <span class="s0">return </span><span class="s1">(</span>
+            <span class="s3">&lt;Box</span>
+            <span class="s4">display</span><span class="s2">=&quot;flex&quot;</span>
+            <span class="s4">width</span><span class="s2">=&quot;100%&quot;</span>
+            <span class="s4">justifyContent</span><span class="s2">=&quot;flex-start&quot;</span>
+            <span class="s4">flexDirection</span><span class="s2">=&quot;column&quot;</span>
+            <span class="s4">mb</span><span class="s2">=</span><span class="s3">{</span><span class="s5">2</span><span class="s3">}</span>
+            <span class="s4">p</span><span class="s2">=</span><span class="s3">{</span><span class="s5">4</span><span class="s3">}</span>
+            <span class="s4">sx</span><span class="s2">=</span><span class="s3">{</span><span class="s1">{</span>
+                <span class="s1">width: </span><span class="s2">'100%'</span><span class="s0">,</span>
+                <span class="s1">backgroundColor: </span><span class="s2">'background.paper'</span><span class="s0">,</span>
+                <span class="s1">borderRadius: </span><span class="s2">'8px'</span><span class="s0">,</span>
+                <span class="s1">border: </span><span class="s2">'1px solid'</span><span class="s0">,</span>
+                <span class="s1">borderColor: </span><span class="s2">'error.light'</span><span class="s0">,</span>
+            <span class="s1">}</span><span class="s3">}</span>
+            <span class="s3">&gt;</span>
+                <span class="s3">&lt;TaskHeader /&gt;</span>
+                <span class="s3">&lt;TaskDiscretion /&gt;</span>
+                <span class="s3">&lt;TaskFooter /&gt;</span>
+            <span class="s3">&lt;/Box&gt;</span>
+    <span class="s1">)</span>
+<span class="s1">}</span></pre>
+</body>
+</html>
